@@ -8,15 +8,76 @@
     <title>UOC Boilerplate</title>
   </head>
   <body>
-    <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC!<i
-      class="fas fa-university"></i></h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
+    <header>
+      <img src="./assets/images/foto_carnet.jpg" alt="Foto de carnet" class="photo">
+      <h1>Tània Garcia Font</h1>
+    </header>
+    <nav>
+      <div class="menu" id="menuNav">
+          <a href="#informacio_personal">Dades personals</a>
+          <a href="#dades_academiques">Dades acadèmiques</a>
+          <a href="#experiencia_professional">Experiència professional</a>
+          <a href="#altres_coneixements">Altres coneixements</a>
+          <a href="#idiomes">Idiomes</a>
+          <a href="#dades_interes">Dades interès</a>
+          <a id="menuIcon" class="icon">
+              <i class="fa fa-bars fa-lg"></i>
+          </a>
+      </div>
+  </nav>
+    <div id="informacio_personal">
+      <h2 class="exp-title">Dades personals <i class="fas fa-user"></i></h2>
+      <ul>
+        <li><strong>Nom i cognoms:</strong> Tània Garcia Font</li>
+        <li><strong>Data de naixement:</strong> 6 d'agost del 1989</li>
+        <li><strong>Direcció:</strong> C/Gran, 2 1r-B Calldetenes</li>
+        <li><strong>Telèfon:</strong> 660270463</li>
+        <li><strong>Correu electrònic:</strong> taniag89@gmail.com</li>
+      </ul>
+    </div>
+    <div id="dades_academiques">
+      <h2 class="exp-title">Dades acadèmiques <i class="fas fa-university"></i></h2>
+      <ul>
+        <li><strong>Tècnic superior en anatomia patològica i citologia</strong> - 2007/2009 - Escola Bonanova (Barcelona)</li>
+        <li><strong>Grau en infermeria</strong> - 2009/2013 - Universitat de Barcelona</li>
+        <li><strong>Màster en màrqueting digital i comerç electrònic</strong> - 2017/2018 - EAE Business School</li>
+        <li><strong>Màster en desenvolupament d'aplicacions i pàgines web</strong>Màster en desenvolupament d'aplicacions i pàgines web - 2018/actualitat - Universitat Oberta de Catalunya</li>
+      </ul>
+    </div>
+    <div id="experiencia_professional">
+      <h2 class="exp-title">Experiència professional <i class="fas fa-briefcase"></i></h2>
+      <ul>
+        <li><strong>Funcions administratives i atenció al client</strong> - 2007/2012 - Logística Malloles, S.L.</li>
+        <li><strong>Infermera</strong> - 2014/2015 - Casa Sacerdotal</li>
+        <li><strong>Cap de línia</strong> - 2013/2018 - Casa Tarradellas</li>
+        <li><strong>Funcions d'administració i gestió / Desenvolupament de pàgina web, d'aplicacions de gestió d'estoc i comptabilitat i manteniment informàtic</strong> - 2018/actualitat - Logística Malloles, S.L.</li>
+        <li><strong>Desenvolupament i manteniment d'aplicacions web de gestió de magatzems</strong> - actualitat - Freelance</li>
+      </ul>
+    </div>
+    <div id="altres_coneixements">
+      <h2 class="exp-title">Altres coneixements <i class="fas fa-lightbulb"></i></h2>
+      <p>Llenguatges com <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Javascript/Typescript</strong>, <strong>SQL</strong>, <strong>PHP</strong>.</p>
+      <p><strong>Angular</strong>, <strong>Drupal</strong> i <strong>Bootstrap</strong>.</p>
+      <p>Experiència en la creació i desenvolupament d'aplicacions de gestió d'estocs i magatzem, així com també de comptabilitat i pàgines web en servidors locals i remots.</p>
+    </div>
+    <div id="idiomes">
+      <h2 class="exp-title">Idiomes <i class="fas fa-globe"></i></h2>
+      <ul>
+        <li><strong>Català:</strong> Nadiua</li>
+        <li><strong>Castellà:</strong> Avançat</li>
+        <li><strong>Anglès:</strong> Mitjà</li>
+      </ul>
+    </div>
+    <div id="dades_interes">
+      <h2 class="exp-title">Altres dades d'interès <i class="fas fa-map-marker"></i></h2>
+      <p>Carnet de conduir tipus B, vehicle propi.</p>
+    </div>
+    <footer>
+      <p>© Currículum Vitae</p>
+      <p>Activitat realitzada per Tània Garcia Font, per a l'assignatura Eines HTML i CSS 2. Segon
+          semestre del curs 2020-2021</p>
+  </footer>
+    <script src="./assets/scripts/index.js"></script>
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
