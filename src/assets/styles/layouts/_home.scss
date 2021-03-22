@@ -27,7 +27,7 @@ body {
 }
 
 #dades_interes p, #altres_coneixements p{
-  margin: 15px 75px;;
+  margin: 15px 75px;
   font-family: $font-family-serif;
   font-size: 18px;
 }
@@ -102,11 +102,6 @@ footer {
   padding: 30px;
 }
 
-
-@media (min-width: 550px) {
-
-
-}
 @media (min-width: 1200px) {
  
  .menu a:hover {
