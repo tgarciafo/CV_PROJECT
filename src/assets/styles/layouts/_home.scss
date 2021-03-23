@@ -4,13 +4,7 @@ body {
   margin: 0px;
   width: 100%;
   height: 100vh;
-}                                                                                                                                                                                                                               
-
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+}             
 
 .container.couple{
   background-color: $cv-bg;
@@ -20,36 +14,28 @@ body {
   background-color: $cv-bg2;
 }
 
-.title-section{
-  flex: 0 35%;
-}
-
-.content-section{
-  flex: 0 65%;
+.container{
+  border-bottom:  5px solid #7dd047;
+  padding: 25px 15px;
 }
 
 .exp-title {
-  margin: 30px;
+  margin: 10px;
   font-family: $font-family-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   color: $cv-corporate;
 }
 
-#informacio_personal, #dades_academiques, #experiencia_professional, #dades_interes, #idiomes, #altres_coneixements{
-  padding: 30px;
-  border-bottom:  5px solid #7dd047;
-}
-
-#informacio_personal li, #dades_academiques li, #experiencia_professional li, #idiomes li{
+.content-section li{
   font-family: $font-family-serif;
-  font-size: 18px;
-  margin: 15px 15px;
+  font-size: 16px;
+  margin: 10px 5px;
   list-style: none;
 }
 
-#dades_interes p, #altres_coneixements p{
-  margin: 15px 50px;
+.content-section p{
+  margin: 15px 35px;
   font-family: $font-family-serif;
   font-size: 18px;
 }
@@ -154,5 +140,36 @@ footer {
   h1{
     font-size: 48px;
   }
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  
+  .title-section{
+    flex: 0 35%;
+  }
+  
+  .content-section{
+    flex: 0 65%;
+  }
+
+  .exp-title {
+    margin: 30px;
+    font-size: 28px;
+  }
+
+  .content-section li{
+    font-size: 18px;
+    margin: 15px 15px;
+  }
+  
+  .content-section p{
+    margin: 15px 50px;
+    font-size: 18px;
+  }
+  
  
 }
