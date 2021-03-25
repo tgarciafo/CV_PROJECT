@@ -3,20 +3,20 @@ body {
   height: 100vh;
   margin: 0;
   font-family: $font-family-sans-serif;
-  color: $cv-corporate;
+  color: $black;
 }
 
 .couple {
-  background-color: $cv-bg;
+  background-color: $cv-bgc;
 }
 
 .odd {
-  background-color: $cv-bg2;
+  background-color: $cv-bgo;
 }
 
 .container {
   padding: 25px 15px;
-  border-bottom: 5px solid #7dd047;
+  border-bottom: 5px solid $line;
 }
 
 .exp-title {
@@ -24,20 +24,22 @@ body {
   font-family: $font-family-serif;
   font-size: 24px;
   font-weight: bold;
-  color: $cv-corporate;
+  color: $black;
 }
 
-.content-section li {
-  margin: 10px 5px;
-  font-family: $font-family-serif;
-  font-size: 16px;
-  list-style: none;
-}
+.content-section {
+  li {
+    margin: 10px 5px;
+    font-family: $font-family-serif;
+    font-size: 16px;
+    list-style: none;
+  }
 
-.content-section p {
-  margin: 15px 35px;
-  font-family: $font-family-serif;
-  font-size: 18px;
+  p {
+    margin: 15px 35px;
+    font-family: $font-family-serif;
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -59,16 +61,16 @@ body {
 
   .content-section {
     flex: 0 65%;
-  }
 
-  .content-section li {
-    margin: 15px;
-    font-size: 18px;
-  }
+    li {
+      margin: 15px;
+      font-size: 18px;
+    }
 
-  .content-section p {
-    margin: 15px 50px;
-    font-size: 18px;
+    p {
+      margin: 15px 50px;
+      font-size: 18px;
+    }
   }
 }
 
@@ -76,7 +78,7 @@ img {
   display: block;
   width: 150px;
   margin: 0 auto;
-  border: 6px black solid;
+  border: 6px $black;
 }
 
 h1 {
@@ -86,7 +88,7 @@ h1 {
 @media (min-width: 1200px) {
   img {
     width: 250px;
-    border: 8px black solid;
+    border: 8px $black;
   }
 
   h1 {
@@ -98,7 +100,7 @@ header {
   height: 300px;
   padding-top: 75px;
   text-align: center;
-  background-color: black;
+  background-color: $black;
   background-image: url('./../images/desktop-image.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -115,67 +117,71 @@ header {
 .menu {
   overflow: hidden;
   font-family: $font-family-serif;
-  background-color: #000;
-}
+  background-color: $black;
 
-.menu a {
-  display: block;
-  float: left;
-  padding: 20px 25px;
-  font-size: 17px;
-  color: #ddd;
-  text-align: center;
-  text-decoration: none;
-}
+  a {
+    display: block;
+    float: left;
+    padding: 20px 25px;
+    font-size: 17px;
+    color: $gray;
+    text-align: center;
+    text-decoration: none;
 
-.menu a:not(:first-child) {
-  display: none;
-}
+    &:not(:first-child) {
+      display: none;
+    }
 
-.menu a.icon {
-  display: block;
-  float: right;
+    &.icon {
+      display: block;
+      float: right;
+    }
+  }
 }
 
 .menu.responsive {
   position: relative;
-}
 
-.menu.responsive a.icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #ddd;
-  background-color: #000;
-}
+  a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
 
-.menu.responsive a {
-  display: block;
-  float: none;
-  text-align: left;
+  .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $gray;
+    background-color: $black;
+  }
 }
 
 @media (min-width: 1200px) {
-  .menu a:hover {
-    color: black;
-    background-color: #ddd;
-  }
+  .menu {
+    a {
+      &:hover {
+        color: $black;
+        background-color: $gray;
+      }
 
-  .menu .icon {
-    display: none;
-  }
+      &:not(:first-child) {
+        display: inline;
+      }
 
-  .menu a:not(:first-child) {
-    display: inline;
-  }
+      &.icon {
+        display: none;
+      }
+    }
 
-  .menu a.icon {
-    display: none;
+    .icon {
+      display: none;
+    }
   }
 }
 
 footer {
   padding: 30px;
-  color: #ddd;
-  background-color: black;
+  color: $gray;
+  background-color: $black;
 }

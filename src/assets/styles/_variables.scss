@@ -4,7 +4,10 @@ $font-family-sans-serif: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 
   arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-family-serif: 'Georgia', 'Times New Roman', serif;
 
-$cv-corporate: #000;
-$cv-masterbrand: #828383;
-$cv-bg: color.scale($cv-masterbrand, $lightness: 75%);
-$cv-bg2: color.scale($cv-masterbrand, $lightness: 50%);
+$black: #000;
+$gray: #ddd;
+$cv-background: #828383;
+$cv-bgc: color.scale($cv-background, $lightness: 75%);
+$cv-bgo: color.scale($cv-background, $lightness: 50%);
+
+$line: #7dd047;
