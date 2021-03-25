@@ -43,9 +43,9 @@ body {
 @media (min-width: 1200px) {
   .container {
     display: flex;
-    padding: 30px;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 30px;
   }
 
   .exp-title {
@@ -100,8 +100,8 @@ header {
   text-align: center;
   background-color: black;
   background-image: url('./../images/desktop-image.jpg');
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
